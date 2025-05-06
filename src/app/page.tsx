@@ -9,9 +9,9 @@ export default function Home() {
         <SignInButton />
       </SignedOut>
 
-       <SignedIn>
+      <SignedIn>
         <UserButton />
-       </SignedIn>
+      </SignedIn>
   </div>
   );
 }
