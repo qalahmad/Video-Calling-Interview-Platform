@@ -10,7 +10,6 @@ import { useRouter } from "next/navigation";
 import MeetingModal from "@/components/MeetingModal";
 import { Loader2Icon } from "lucide-react";
 
-
 export default function Home() {
   const router = useRouter();
 
@@ -34,7 +33,7 @@ export default function Home() {
     }
   };
 
-  if (isLoading) return <p> loading... </p>
+  if (isLoading) return <p> loading... </p>;
 
   return (
     <div className="container max-w-7xl mx-auto p-6">
@@ -73,7 +72,9 @@ export default function Home() {
         <>
           <div>
             <h1 className="text-3xl font-bold">Your Interviews</h1>
-            <p className="text-muted-foreground mt-1">View and join your scheduled interviews</p>
+            <p className="text-muted-foreground mt-1">
+              View and join your scheduled interviews
+            </p>
           </div>
 
           <div className="mt-8">
@@ -82,9 +83,7 @@ export default function Home() {
                 <Loader2Icon className="h-8 w-8 animate-spin text-muted-foreground" />
               </div>
             ) : interviews.length > 0 ? (
-              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                
-              </div>
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"></div>
             ) : (
               <div className="text-center py-12 text-muted-foreground">
                 You have no scheduled interviews at the moment
