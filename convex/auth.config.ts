@@ -1,7 +1,7 @@
 export default {
     providers: [
       {
-        domain: "https://notable-mink-43.clerk.accounts.dev",
+        domain: process.env.CLERK_DOMAIN,
         applicationID: "convex",
       },
     ]
